@@ -1,3 +1,5 @@
+
+gsap.from(".block", {opacity:0, y:300, duration: 3, ease:"bounce"})
 const api = {
     endpoint:"https://api.openweathermap.org/data/2.5/",
     key: "9df1e1cb0bdf2d387ec43c65073ded45"
@@ -16,12 +18,7 @@ function enter (e) {
 
 async function getInfo(data) {
 const res = await fetch(`${api.endpoint}weather?q=${data}&units=metric&appID=${api.key}`);
-const resReceive = await res.json();
-// console.log(resReceive)
-// console.log(resReceive.main.temp)
-// console.log(resReceive.name)
-// console.log(resReceive.main.feels_like)
-// console.log(resReceive.weather[0].description)
+
 DisplayResult (resReceive)
 
 }

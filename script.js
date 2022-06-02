@@ -54,37 +54,37 @@ function getBackgroundImage(resReceive) {
   let conditions = resReceive.weather[0].main;
     
   if (conditions === "Clear") {
-  body.style.backgroundImage =
+  document.body.style.backgroundImage =
   "url('https://i.pinimg.com/originals/d8/a2/ee/d8a2eee27b91f50078645085e4057f3c.gif')";
   }
      
     if (conditions === "Clouds") {
-    body.style.backgroundImage =
+    document.body.style.backgroundImage =
     "url('https://i.gifer.com/origin/dd/ddedd3a2f4a3995d8cd1a8ab2033c9ce.gif')";
   }
    
   if (conditions === "Mist" || conditions === "Smoke" || conditions === "Haze" || conditions === "Dust" || conditions === "Fog" || conditions === "Sand" || conditions === "Ash" || conditions === "Squall" || conditions === "Tornado") {
-   body.style.backgroundImage =
+   document.body.style.backgroundImage =
     "url('https://i.gifer.com/61P.gif')";
   }
       
   if (conditions === "Snow") {
-      body.style.backgroundImage =
+      document.body.style.backgroundImage =
       "url('https://i.pinimg.com/originals/48/53/13/4853139a4a4f2fd18938c04e37eac07e.gif')";
   }
   
   if (conditions === "Rain") {
-      body.style.backgroundImage =
+      document.body.style.backgroundImage =
       "url('https://i.gifer.com/Vi8C.gif')";
   }
   
   if (conditions === "Drizzle") {
-      body.style.backgroundImage =
+      document.body.style.backgroundImage =
       "url('https://i.gifer.com/7sd0.gif')";
   }
   
   if (conditions === "Thunderstorm") {
-      body.style.backgroundImage =
+      document.body.style.backgroundImage =
       "url('https://i.pinimg.com/originals/2d/64/a0/2d64a0589474de3d89388bff22b52c54.gif')";
   }
   }
